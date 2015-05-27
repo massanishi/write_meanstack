@@ -11,8 +11,7 @@ app.controller('PostsCtrl', function($scope, PostsSvc) {
             PostsSvc.create({
                 username: 'dickeyxxx',
                 body: $scope.postBody
-            }).success(function(post) {
-
+            }).then(function(){
                 $scope.postBody = null;
             })
         }
